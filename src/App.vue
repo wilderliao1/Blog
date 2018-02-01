@@ -3,17 +3,19 @@
     <div class="nav">
       <img src="./assets/logo.png">
       <label>{{ name }}</label>
-      <ul>
-        <li>
-          <router-link :to="{name: 'Blog'}">博客</router-link>
-        </li>
-        <li>
-          <router-link :to="{name: 'Msg'}">留言</router-link>
-        </li>
-        <li>
-          <router-link :to="{name: 'About'}">关于</router-link>
-        </li>
-      </ul>
+      <div class="tap">
+        <ul>
+          <li>
+            <router-link :to="{name: 'Blog'}">博客</router-link>
+          </li>
+          <li>
+            <router-link :to="{name: 'Msg'}">留言</router-link>
+          </li>
+          <li>
+            <router-link :to="{name: 'About'}">关于</router-link>
+          </li>
+        </ul>
+      </div>
     </div>
     <router-view/>
   </div>
@@ -58,16 +60,18 @@ export default {
   vertical-align: middle;
   display: inline-block;
 }
-.nav ul {
-    list-style:none;
+
+.nav .tap {
+  float:right;
 }
 
 .nav ul li {
-  float:right;
+  float:left;
   width:100px;
   background:#CCC;
   margin-left:3px;
   line-height:30px;
+  display:inline;
 }
 .nav ul a {
   display:block;

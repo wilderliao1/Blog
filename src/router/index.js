@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Blog from '@/components/Blog'
+import Blog from '../components/Blog/Blog'
 import Msg from '@/components/Msg'
 import About from '@/components/About'
 
